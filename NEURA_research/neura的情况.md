@@ -1,0 +1,84 @@
+
+
+
+
+---
+# about neura
+
+neura has a unique hybrid architecture, using the Jetson AGX as the AI brain and the STM32H7 as the hard real-time and deterministic control of actuators and drivers, achieving articulation frequencies similar to the FR3 at **1 kHz** and **below 50 milliseconds** latency and power consumption to **below 100 watts** per robot. This approach is designed to optimize performance and energy efficiency, enabling truly "cognitive" robotics. On the software side and as Neura’s platform strategy, Neura's foundation is the **Neuraverse**, functions as a **holistic ecosystem** that integrates hardware, software, and AI models. and Neuraverse is compatible with ROS 2 but extends it with proprietary cognitive functions, such as using **GR00T models** for physical AI and provides a **Marketplace function**, enabling customers to access plug-and-play applications (Apps) and services. To enhance its **Mobile Autonomous Vehicle (MAV)** capabilities, Neura built a **strategic partnership** with **NODE Robotics**, integrating NODE's autonomy software, specifically the **NODE.move** module, deeply into the Neuraverse ecosystem. This provides the MAV platforms with capabilities such as real-time path planning and hybrid navigation, supporting high payloads up to **1,500 kg**. Neura's cognitive abilities rely on advanced **multimodal sensor fusion**, including **Intel RealSense D455** vision sensors and bio-inspired **tactile sensors** (such as GelSight sensors and Piezo-taktile Arrays) used in grippers. All this data is centrally processed in the Jetson AGX chip for real-time perception. Starting in 2026 the company plans to transition to **NVIDIA Blackwell** chips (e.g., the GB10 for the **4NE-1 humanoid robot**), aiming to achieve performance exceeding **1,000 TOPS**. Furthermore, Neura is increasing its focus on **RISC-V open hardware** for custom MCUs, to maintain computational leadership in the field of physical AI.
+
+
+
+
+
+---
+
+### 1. Core Technology Architecture: The Hybrid Edge
+
+Neura Robotics' technological advantage does not lie in a single chip, but in its unique **hybrid architecture** (*hybride Architektur*). You can emphasize the following points:
+
+*   **Separation of Brain and Nerves:** Neura employs a hybrid setup combining high-end AI chips with reliable embedded microcontrollers (MCUs).
+    *   You can describe the **NVIDIA Jetson AGX Orin (64 GB)** as the robot's "**Brain**" (AI), which provides up to **275 TOPS** of inference performance, specifically used to drive **Physical AI** (e.g., VLA models in Neuraverse) and real-time sensor fusion.
+    *   Concurrently, the **STM32H7 Series** (e.g., as joint controllers) can be described as the robot's "**Nerves**" (Control), which are responsible for **Hard-Real-Time** (*Hard-Real-Time*) and deterministic control, such as achieving **1 kHz frequency** joint control similar to the FR3.
+*   **Advantage of Performance Metrics:** This hybrid setup brings tangible performance improvements, reducing robot latency to **below 50 milliseconds** and lowering the power consumption per robot to **below 100 watts**. Interviewers will be impressed by your knowledge of these specific engineering metrics.
+*   **Specialized Safety Chip:** For applications with extremely high functional safety requirements (e.g., automotive production lines), Neura utilizes the **Infineon AURIX TC3xx** chip, which is based on TriCore and **ASIL-D certified** . This indicates the company's rigorous approach to deploying safety-critical robots.
+
+### 2. Platform Strategy: Neuraverse—The OS of the Robotics Era
+
+The Neuraverse is the strategic core of the company. Demonstrate your understanding of the Neuraverse's positioning and capabilities:
+
+*   **"Operating System of the Robotics Era":** Neura positions the **Neuraverse** as the "**Operating System of the Robotics Era**" (*Operating System der Robotik-Ära*) . It is not just software, but a **holistic ecosystem** designed to seamlessly connect cognitive robots, integrating hardware, software, and AI models .
+*   **Market Function and Plug-and-Play:** Emphasize the **Marketplace function** (*Marketplace-Funktion*) of the Neuraverse, which provides a platform for applications (Apps), models, and services . This makes the Neuraverse the "App Store for Robotics" .
+*   **ROS 2 Compatibility and Extension:** The Neuraverse is compatible with ROS 2 but extends upon it by adding proprietary cognitive functionalities and integrating **NVIDIA Omniverse** and Isaac Sim .
+*   **Competitive Differentiation:** You can mention that the Neuraverse, with its AI-driven adaptability and scalability, differentiates it from competitors such as Franka or Universal Robots .
+
+### 3. Strategic Cooperation and Mobile Autonomy (MAV/AMR)
+
+Discussing Neura's strategic collaboration, especially with NODE Robotics, can demonstrate your understanding of the company's growth model:
+
+*   **"Technical Integration" rather than full Acquisition:** Emphasize that the collaboration with **NODE Robotics** is a **strategic partnership**, aimed at deeply integrating NODE's autonomous software (NODE.OS) into the Neuraverse ecosystem, which is different from the actual acquisition of hardware/expertise from ek robotics .
+*   **Enhanced MAV Capability:** By integrating the **NODE.move** module (provided as a plug-and-play App in the Neuraverse Marketplace), Neura's Mobile Autonomous Vehicle (MAV) platform gains powerful capabilities, including:
+    *   **Real-time path planning** and **hybrid navigation** .
+    *   High load capacity (up to **1,500 kg**) and precise positioning capability (**±5 mm**) .
+*   **Joint Standard Setting:** Quote CEO David Reger's view: this collaboration is a paradigm of NEURA's platform strategy, centering on the **spirit of cooperation**, because only through cooperation can global standards be established .
+
+### 4. Sensor Technology: Multimodal Fusion and Future Trends
+
+Neura's advancement in sensing is the foundation of its "cognitive" abilities:
+
+*   **Multimodal Fusion:** Neura relies on multimodal sensors (Vision, Tactile, Force, Proximity) and centralizes data processing on the Jetson AGX to achieve real-time perception (e.g., Vision sensors such as Intel RealSense D455 and Basler ace2) .
+*   **Advanced Tactile Sensors:** Mention that Neura uses advanced tactile technology on the grippers of the humanoid robot (**4NE-1**) and MiPA robotic arm, such as **bio-inspired GelSight sensors** or **Piezo-taktile Arrays** . This supports adaptive grasping strategies (e.g., soft grasping Soft-Gripping) and enhances safety .
+*   **Future Trends:** Mention the company's plan to add more **bionic sensors** (*bio-mimetische Sensoren*) before 2026, such as eSkin for humanoid robots, and integration with **NVIDIA GR00T** to achieve predictive perception .
+
+### 5. Future Outlook (High-Level Perspective)
+
+Conclude with insights into future technology to demonstrate your focus on industry frontiers:
+
+*   **Blackwell Chip Deployment:** Neura plans to transition to **NVIDIA Blackwell** chips (e.g., the GB10 for humanoid robots) starting in 2026 and beyond, aiming to achieve performance of **over 1,000 TOPS** . This indicates Neura's commitment to maintaining its computational leadership in the field of physical AI.
+*   **Open Hardware Trend:** Furthermore, Neura will focus more on **RISC-V open hardware** (*Open-Hardware*) for customized MCUs . This reflects consideration for supply chain customization and future flexibility.
+
+
+
+
+---
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+---
+---
+---
