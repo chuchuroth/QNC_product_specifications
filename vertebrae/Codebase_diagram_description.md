@@ -1,4 +1,4 @@
-QNC — C++ Architecture Diagram Description (qnc-cpp/)
+# QNC — C++ Architecture Diagram Description (qnc-cpp/)
 
 This document accompanies `qnc_structural_diagram` and reflects the C++
 implementation under `qnc-cpp/` . The diagram is structured around the three views:
@@ -9,6 +9,7 @@ that supplies their behaviour.
 ================================================================================
 1. Component descriptions
 ================================================================================
+
 
 ### External consumers (outside the repo)
 
@@ -63,7 +64,7 @@ Controllers:
 - `devices_controller` — CRUD over the device registry, rejects WiFi-only
   control URIs at the schema level.
 - `descriptors_controller` — upload + retrieve descriptors; computes a
-  stable SHA-256 checksum, rejects duplicates with 409.
+    stable SHA-256 checksum, rejects duplicates with 409.
 - `commands_controller` — accepts a `GripperCommand` JSON, enqueues onto
   Redis stream `qnc:commands` for the gateway to consume, and writes an
   audit row to `event_log`.
