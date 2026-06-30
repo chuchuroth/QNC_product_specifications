@@ -363,3 +363,59 @@ Several major industrial Ethernet protocols require some form of **membership or
 | PROFINET        | PI                         | Yes                         | Annual PI fee by category  [profibus](https://www.profibus.com/pi-organization/membership) |
 
 If you tell me which protocol you’re realistically considering (e.g., CANopen‑based, PROFINET, EtherCAT, or CC‑Link), I can sketch a concrete “decision tree” for your company including cost‑ to‑benefit for membership.
+
+
+---
+---
+Prototyping or creating a DIY demo with a traditional gigabit **CC-Link IE Field** network can be challenging because it usually requires dedicated hardware/ASICs (like Mitsubishi's master/slave boards) and specialized gigabit hardware.
+
+However, the CC-Link Partner Association (CLPA) introduced **CC-Link IE Field Basic** and **CC-Link IE TSN (Time-Sensitive Networking)**. These versions run over **standard, general-purpose Ethernet layers**, making them incredibly easy, cheap, and flexible for prototyping, software-defined master/slave setups, and DIY demos.
+
+The best hardware options and entry points for a prototype or demo setup include:
+
+---
+
+## 1. The Ultimate DIY / Microcontroller Route (STM32 Nucleo)
+
+The CLPA officially supports and provides free source code/SDKs for open-source microcontrollers, making this the best option if you want to build a device from scratch.
+
+* **The Hardware:** **STMicroelectronics NUCLEO-F439ZI** (or similar STM32 boards with a built-in Ethernet port).
+* **Why it’s great for prototyping:** The CLPA website offers a **free sample code/SDK** specifically tailored for the Nucleo board running FreeRTOS and lwIP.
+* **How it works:** You download the source code, flash it onto the cheap Nucleo board using STM32CubeIDE, and you instantly have a fully functioning CC-Link IE TSN (or Field Basic) Remote Station. You can then wire up basic digital/analog sensors to the microcontroller pins to demo IO capabilities.
+
+## 2. The Software & PC Route (No Hardware Required)
+
+If you want to demo how a CC-Link IE Master or Slave behaves without buying any fieldbus hardware at all, you can use a regular PC or Raspberry Pi.
+
+* **The Hardware:** Any Windows PC, Linux machine, or **Raspberry Pi** with an Ethernet port.
+* **Why it’s great for prototyping:** Because CC-Link IE Field Basic uses standard UDP/IP and the **SLMP (Seamless Message Protocol)**, you don't need a hardware master card.
+* **How it works:** * **As a Master:** You can write a simple Python, C#, or C++ script using standard socket programming to send SLMP commands over Ethernet to any CC-Link IE Basic device.
+* **As a Simulation/HMI:** Software like Mitsubishi's **GT SoftGOT2000** can turn a standard PC into a CC-Link IE Field Basic slave station or master interface for visualization.
+
+
+
+## 3. Entry-Level Industrial Devices (The "Plug-and-Play" Demo)
+
+If you want real industrial hardware to interact with your code or a controller but don't want to spend thousands of dollars on complex modular PLCs:
+
+### A. Mitsubishi MELSEC iQ-F Series (FX5U / FX5UJ)
+
+* **Role:** Master Station
+* **Why it's great:** Unlike higher-end modular PLCs (like the iQ-R), the FX5U/FX5UJ micro-PLCs are highly integrated, relatively inexpensive, and have a CC-Link IE Field Basic master port **built directly into the CPU** Ethernet port. No extra expensive network modules are required.
+
+### B. Balluff CC-Link IE Field Basic Network Blocks (e.g., BNI series)
+
+* **Role:** Slave Station / Remote I/O
+* **Why it's great:** Balluff makes rugged, compact, on-machine Ethernet I/O blocks that natively support CC-Link IE Field Basic and **IO-Link**. It is arguably one of the easiest ways to pull sensor data (like proximity sensors, RFID, or measurement devices) into a CC-Link IE demo setup via simple web-configuration or SLMP.
+
+---
+
+## 💡 Recommended Setup for a Quick Demo
+
+If you want a weekend project to prove the concept:
+
+1. **Master:** Use a **Raspberry Pi** or **Windows PC** running a custom script or open-source SLMP/CC-Link library.
+2. **Slave:** An **STM32 Nucleo-F439ZI** board loaded with the official CLPA free sample code.
+3. **Physical Link:** Just a standard Cat5e Ethernet cable connecting them (or through a basic unmanaged home network switch).
+
+Would you like some guidance on where to find the official CLPA source code or how the SLMP packet structure looks for a basic software master?
