@@ -1,4 +1,10 @@
 
+An ESP32 module is connected to this computer via USB. Detect the connected ESP32, identify the correct serial port, and flash a minimal LED blink program onto it. Use the board's built-in LED if available; otherwise, clearly indicate which GPIO pin the LED is expected to be connected to. After flashing, monitor the serial output (if any) and verify that the LED blinks as expected. If flashing fails or the board cannot be detected, diagnose the issue by checking the USB connection, drivers, serial port, boot mode, and permissions, and report the exact error. Based on the results, determine whether the  appears to be functioning normally or is likely defective, explaining the evidence for your conclusion. Do not ask for confirmation before proceeding.
+
+
+
+
+
 ---
 
 **Prompt:**
