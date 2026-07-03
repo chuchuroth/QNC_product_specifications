@@ -69,3 +69,39 @@
 从软件工程角度，CI/CD 不仅是工具或脚本，更是一种**质量保障与流程优化的系统工程实践**。它的核心思想是：**自动化一切可自动化的环节，让每次代码变更都快速、安全、可追溯地到达用户手中**。在现代 DevOps 和敏捷开发中，CI/CD 几乎是标准配置。
 
 ---
+---
+---
+Here’s a simple explanation in everyday language:  
+
+The text is describing a feature that makes setting up automated work processes (called **pipelines**) easier and smarter.  
+
+Imagine you’re filling out a form online. At first, you choose an option from one dropdown menu — say, a country. As soon as you pick "Germany," the next dropdown automatically shows only the **cities** in Germany instead of showing every city in the world.  
+
+This is what “**dynamic input selection**” means: the choices you see later depend on what you picked earlier.  
+
+In this context, the "pipelines" are just automated sets of tasks that companies use to build or launch software. The “web interface” is simply the tool or screen you use to set it all up, and this new feature makes it more **interactive and user-friendly**.  
+
+Would you like me to also explain what a **CI/CD pipeline** actually does in plain terms?
+
+
+---
+
+A CI/CD pipeline is like an automated **assembly line** for software.  It takes changes that developers make and automatically checks them, tests them, and then puts them “live” for users when everything looks good.[1][2][3][4]
+
+## What CI/CD Means
+
+- CI stands for **Continuous Integration**, which means every time developers change something, the system automatically checks whether it still works well with everything else.[3][5][1]
+- CD stands for **Continuous Delivery/Deployment**, which means those checked changes can be automatically prepared and sent out to users with very little or no manual work.[5][6][3]
+
+## Everyday Analogy
+
+- Imagine a car factory assembly line: parts are added, checked, painted, and inspected step by step until a finished car comes out.[2][7]
+- A CI/CD pipeline does the same for software: it takes code changes, builds them, tests them, checks quality, and then releases them step by step.[4][1][2]
+
+## Why Companies Use It
+
+- Fewer mistakes: Problems are caught early because every change is automatically tested.[8][7][1]
+- Faster updates: New features and fixes reach users quickly instead of waiting weeks or months.[3][5][4]
+- Consistent process: The same automated steps run every time, so the process is more reliable and less dependent on manual work.[6][1][8]
+
+If you tell what kind of company or product you’re thinking about, a custom example can make this even clearer.
