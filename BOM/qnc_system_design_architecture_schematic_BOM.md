@@ -1,3 +1,6 @@
+# 用flux把板子画出来
+
+
 After reviewing the four QNC documents, the main takeaway is: the specifications define **system function**, **protocol boundaries**, **baseline vs. extension scope**, **safe mode / fault isolation**, **configuration governance**, and **environmental requirements** very clearly, but **not** the detail data needed for a final PCB—such as exact connectors, pinout, supply voltage, port count per variant, current budget, insulation withstand, enclosure / IP rating, and mechanical constraints. Therefore, the following proposal is a **production-oriented reference design plan** based on the documents—with explicit assumptions wherever the materials remain open.    
 
 ---
