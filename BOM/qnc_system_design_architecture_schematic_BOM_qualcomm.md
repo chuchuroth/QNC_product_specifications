@@ -1,4 +1,4 @@
-# Industrial Edge Gateway BOM and PCB Design Update
+# Industrial Edge Gateway BOM and PCB Design Update   用flux画板
 
 ## 1. Architecture Update
 
