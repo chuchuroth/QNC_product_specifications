@@ -1,4 +1,4 @@
-# Industrial Edge Gateway — Hardware Design and Software Architecture
+# Industrial Edge Gateway — Hardware Design and Software Architecture   用flux画板
 
 ---
 
