@@ -39,3 +39,10 @@
 路线图预测：未来可能扩展至更多工业协议、扩展设备类别及机队管理功能，但这些均不属于目前的基准发布范畴。
 
 ---
+
+---
+QNC (Quick Network Connector) is a configurable industrial end-effector connectivity gateway and software-first edge integration platform. It follows the principle of unified integration—not native universality: value comes from modular protocol layers, validated device profiles, and governed northbound interfaces, not from claiming one implementation supports every industrial protocol without release discipline.
+
+Release scope is tiered. The current baseline southbound stack includes IO-Link (v1.1 master), Modbus RTU, EtherNet/IP (adapter), and configurable discrete digital I/O; baseline northbound interfaces are REST, WebSocket, and structured logging. Approved extension scope adds southbound protocols such as Modbus TCP and CANopen, northbound OPC UA Server and MQTT Client, multi-device aggregation, and FastDDS DomainParticipant integration in compatible ROS 2 / DDS deployments—enabling controlled subscribe/publish and, where validated and released, DDS-to-northbound bridging (e.g., to OPC UA or MQTT). Advanced gateway direction covers hardware-assisted industrial Ethernet such as EtherCAT and PROFINET, plant-level supervisory integration, FastDDS Discovery Server mode for larger or cross-network deployments, and fleet-style telemetry—each subject to formal approval, validation, and release sign-off.
+
+QNC is not a safety-rated controller; Safe Mode is operational fault management. FastDDS participation is an approved extension direction until separately validated and released, not baseline functionality by default.
