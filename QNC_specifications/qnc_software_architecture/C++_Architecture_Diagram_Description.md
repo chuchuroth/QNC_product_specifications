@@ -6,10 +6,10 @@ the **build artefacts** (`apps/`), the **service composition** that lives
 inside each app (`services/`), and the **static library layer** (`libs/`)
 that supplies their behaviour.
 
-================================================================================
-1. Component descriptions
 
-================================================================================
+## 1. Component descriptions
+
+
 
 
 ### External consumers (outside the repo)
@@ -254,10 +254,10 @@ The newest library, isolated behind `QNC_ENABLE_IOLINK`. Layers:
   disabled to keep the off-path honest.
 
 
-================================================================================
 
-2. IO-Link integration (new subsystem)
-================================================================================
+
+## 2. IO-Link integration (new subsystem)
+
 
 IO-Link is the first protocol QNC supports where the device sits behind a
 **master** rather than being directly addressable. The integration follows
@@ -275,10 +275,10 @@ three rules:
    bloating the existing `adapter_port` contract that every other
    adapter implements unchanged.
 
-================================================================================
 
-3. Key data flows
-================================================================================
+
+## 3. Key data flows
+
 
 ### Command dispatch (write path)
 
@@ -364,10 +364,10 @@ an ingest worker (out of `qnc-cpp/`) that consumes the Redis stream
 `qnc:telemetry` and bulk-inserts into the `gripper_telemetry` hypertable.
 This keeps the gateway's hot path free of DB I/O.
 
-================================================================================
 
-4. Assumptions , Gap
-===============================================================================
+
+## 4. Assumptions , Gap
+
 
 | # | Assumption / Gap | Notes |
 |---|---|---|
