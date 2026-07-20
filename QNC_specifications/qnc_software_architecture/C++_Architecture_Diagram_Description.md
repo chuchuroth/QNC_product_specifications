@@ -7,6 +7,7 @@ inside each app (`services/`), and the **static library layer** (`libs/`)
 that supplies their behaviour.
 
 ================================================================================
+
 1. Component descriptions
 ================================================================================
 
